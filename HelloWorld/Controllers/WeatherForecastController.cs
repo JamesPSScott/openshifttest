@@ -23,5 +23,11 @@ namespace HelloWorld.Controllers
         {
             return Ok(new { Message = "Hello World" });
         }
+
+        [HttpGet("v2")]
+        public IActionResult GetV2()
+        {
+            return Ok(new { Message = "Hello World V2" });
+        }
     }
 }
